@@ -1,4 +1,5 @@
 class Room < ActiveRecord::Base
+  attr_reader :description, :location, :title
 end
 
 # == Schema Information
