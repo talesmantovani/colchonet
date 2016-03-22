@@ -1,6 +1,7 @@
 class User < ActiveRecord::Base
 
-  attr_reader :bio, :email, :full_name, :location, :password
+  attr_reader :bio, :email, :full_name, :location, :password,
+              :password_confirmation
 
   #Validates
   validates :email, :presence => true,
